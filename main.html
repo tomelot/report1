@@ -98,12 +98,41 @@
 
                 //highlight selected
                 var addselectedDates = function(self) {
-                    var dates = selected_dates[self.current.year() + "-" + self.current.month()]
-                    for (var date in dates) {
-                        dates_obj = dates[date]
-                        document.querySelector(`.day [month="${dates_obj.month()}"], [day="${dates_obj.date()}"], [day="${dates_obj.year()}"]`).classList.add("selected")
+                    var current_dates = selected_dates[self.current.year() + "-" + self.current.month()]
+                    var next_month = (self.current.month() + 1) % 12;
+                    if (self.current.month() != 0) {
+                        var last_month = (self.current.month() - 1) % 12;
+                    } else {
+                        var last_month = 11;
                     }
-
+                    if (next_month == 0) {
+                        var next_dates = selected_dates[(self.current.year() + 1) + "-" + next_month];
+                    } else {
+                        var next_dates = selected_dates[self.current.year() + "-" + next_month];
+                    }
+                    if (last_month == 11) {
+                        var last_dates = selected_dates[(self.current.year() - 1) + "-" + last_month];
+                    } else {
+                        var last_dates = selected_dates[self.current.year() + "-" + last_month];
+                    }
+                    for (var date in current_dates) {
+                        dates_obj = current_dates[date];
+                        document.querySelector(`[month="${dates_obj.month()}"][day="${dates_obj.date()}"][year="${dates_obj.year()}"]`).classList.add("selected");
+                    }
+                    for (var date in next_dates) {
+                        dates_obj = next_dates[date];
+                        var obj = document.querySelector(`[month="${dates_obj.month()}"][day="${dates_obj.date()}"][year="${dates_obj.year()}"]`);
+                        if (obj != null) {
+                            obj.classList.add("selected");
+                        }
+                    }
+                    for (var date in last_dates) {
+                        dates_obj = last_dates[date];
+                        var obj = document.querySelector(`[month="${dates_obj.month()}"][day="${dates_obj.date()}"][year="${dates_obj.year()}"]`);
+                        if (obj != null) {
+                            obj.classList.add("selected");
+                        }
+                    }
                 }
                 setTimeout(addselectedDates, 500, this);
 
