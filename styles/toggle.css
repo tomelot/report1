@@ -290,7 +290,7 @@
 
 .can-toggle.demo-rebrand-1 input[type="checkbox"]:focus~label .can-toggle__switch,
 .can-toggle.demo-rebrand-1 input[type="checkbox"]:hover~label .can-toggle__switch {
-    background-color: rgb(233, 78, 17);
+    background-color: rgba(255, 120, 66, 1);
 }
 
 .can-toggle.demo-rebrand-1 input[type="checkbox"]:focus~label .can-toggle__switch:after,
@@ -332,7 +332,7 @@
 .can-toggle.demo-rebrand-1 label .can-toggle__switch {
     -webkit-transition: background-color 0.3s ease-in-out;
     transition: background-color 0.3s ease-in-out;
-    background: rgb(233, 78, 17);
+    background: rgba(255, 120, 66, 1);
 }
 
 .can-toggle.demo-rebrand-1 label .can-toggle__switch:before {
@@ -344,7 +344,7 @@
     transition: -webkit-transform 0.3s ease-in-out;
     transition: transform 0.3s ease-in-out;
     transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-    color: rgb(233, 78, 17);
+    color: rgba(255, 120, 66, 1);
 }
 
 .can-toggle.demo-rebrand-2 input[type="checkbox"][disabled]~label {

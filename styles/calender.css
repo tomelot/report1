@@ -118,7 +118,7 @@
 }
 
 .day.selected {
-    color: rgb(206, 65, 30);
+    color: rgba(255, 120, 66, 1);
 }
 
 .day-name {
