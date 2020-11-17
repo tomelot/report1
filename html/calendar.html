@@ -24,28 +24,24 @@
             overflow: visible;
         }
         
-        .button {
+        .Footer {
             height: 50px;
             width: 100%;
-            border: none;
             padding: 16px 32px;
+            margin: 4px 2px;
+            background-color: rgba(66, 66, 66, 1);
+        }
+        
+        .button {
+            border: none;
             text-align: center;
             text-decoration: none;
             display: inline-block;
             font-size: 16px;
-            margin: 4px 2px;
             transition-duration: 0.4s;
             cursor: pointer;
-        }
-        
-        .applyButton {
             background-color: rgba(66, 66, 66, 1);
-            color: white;
-        }
-        
-        .applyButton:hover {
-            background-color: rgba(60, 60, 60, 1);
-            color: white;
+            color: #fff;
         }
     </style>
     <script>
@@ -58,13 +54,14 @@
 
 </head>
 
-<body translate="no">
+<body>
     <div id="calendar" class="fadeInDown">
         <div class="settings fadeIn third">
             <div class="can-toggle demo-rebrand-1"><input type="checkbox" id="d"><label for="d">
                     <div class="can-toggle__switch" data-checked="On" data-unchecked="Off"></div>
                     <div class="can-toggle__label-text">Blacklist Toggle</div>
-                </label></div><button class="applyButton button">Apply</button>
+                </label></div>
+            <div class="Footer"><button class="applyButton button underlineHover">Apply</button></div>
         </div>
     </div>
 
