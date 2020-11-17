@@ -303,25 +303,25 @@
 }
 
 .can-toggle.demo-rebrand-1 input[type="checkbox"]:checked~label:hover {
-    color: #39916a;
+    color: rgba(156, 202, 235, 1);
 }
 
 .can-toggle.demo-rebrand-1 input[type="checkbox"]:checked~label .can-toggle__switch {
-    background-color: #44ae7f;
+    background-color: rgba(156, 202, 235, 1);
 }
 
 .can-toggle.demo-rebrand-1 input[type="checkbox"]:checked~label .can-toggle__switch:after {
-    color: #368a65;
+    color: rgba(156, 202, 235, 1);
 }
 
 .can-toggle.demo-rebrand-1 input[type="checkbox"]:checked:focus~label .can-toggle__switch,
 .can-toggle.demo-rebrand-1 input[type="checkbox"]:checked:hover~label .can-toggle__switch {
-    background-color: #3d9c72;
+    background-color: rgba(156, 202, 235, 1);
 }
 
 .can-toggle.demo-rebrand-1 input[type="checkbox"]:checked:focus~label .can-toggle__switch:after,
 .can-toggle.demo-rebrand-1 input[type="checkbox"]:checked:hover~label .can-toggle__switch:after {
-    color: #2f7757;
+    color: rgba(156, 202, 235, 1);
 }
 
 .can-toggle.demo-rebrand-1 label .can-toggle__label-text {
