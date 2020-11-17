@@ -8,10 +8,14 @@ def login(user, password):
     if not user in global_users:
         return None
     cipher_password = hashlib.sha3_512()
+    cipher_user = hashlib.sha3_512()
+    cipher_cookie = hashlib.sha3_512()
+    cipher_user.update(user)
     cipher_password.update(password)
     if global_users[user][0] == cipher_password.hexdigest():
         update_file()
-        return global_users[user][1]
+        cipher_cookie.update(cipher_password.hexdigest() + cipher_user.hexdigest())
+        return cipher_cookie.hexdigest()
     return None
 
 def register(user, password, cookie):
