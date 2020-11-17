@@ -7,22 +7,25 @@
 
 
     <title>report1</title>
-    <link rel="stylesheet" href="styles/toggle.css">
-    <link rel="stylesheet" href="styles/calender.css">
+    <link rel="stylesheet" href="../styles/toggle.css">
+    <link rel="stylesheet" href="../styles/calender.css">
     <style>
         .buttons {
             height: 50px;
-            width: 420px;
+            width: 100%;
             text-align: center;
-            position: relative;
-            z-index: 99;
+            bottom: 74px;
+            /*i don't why i need this but ok...*/
+            right: 1px;
+            position: absolute;
+            box-sizing: border-box;
+            overflow: visible;
         }
         
         .button {
             height: 50px;
-            width: 420px;
+            width: 100%;
             border: none;
-            color: rgba(66, 66, 66, 1);
             padding: 16px 32px;
             text-align: center;
             text-decoration: none;
