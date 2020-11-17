@@ -283,6 +283,6 @@
 
     }
 
-    var calendar = new Calendar('#calendar');
+    var calendar = new Calendar('#calendarContent');
 
 }();
