@@ -3,7 +3,7 @@
 /* BASIC */
 
 a {
-    color: #92badd;
+    color: #fff;
     display: inline-block;
     text-decoration: none;
     font-weight: 400;
@@ -15,12 +15,18 @@ h2 {
     font-weight: 600;
     text-transform: uppercase;
     display: inline-block;
-    margin: 40px 8px 10px 8px;
-    color: #cccccc;
+    margin: 20px 8px 30px 8px;
+    color: #fff;
 }
 
 
 /* STRUCTURE */
+
+.header {
+    background: rgba(66, 66, 66, 1);
+    height: 50px;
+    border-radius: 10px 10px 0 0;
+}
 
 .wrapper {
     display: flex;
@@ -29,14 +35,16 @@ h2 {
     justify-content: center;
     width: 100%;
     min-height: 100%;
-    padding: 20px;
+}
+
+#loginForm {
+    padding-top: 20px;
 }
 
 #formContent {
     -webkit-border-radius: 10px 10px 10px 10px;
     border-radius: 10px 10px 10px 10px;
-    background: #fff;
-    padding: 30px;
+    background: #4A4A4A;
     width: 90%;
     max-width: 450px;
     position: relative;
@@ -47,9 +55,9 @@ h2 {
 }
 
 #formFooter {
-    background-color: #f6f6f6;
-    border-top: 1px solid #dce8f1;
-    padding: 25px;
+    background-color: rgba(66, 66, 66, 1);
+    border-top: 1px solid #rgba(66, 66, 66, 1);
+    padding: 15px;
     text-align: center;
     -webkit-border-radius: 0 0 10px 10px;
     border-radius: 0 0 10px 10px;
@@ -64,14 +72,13 @@ h2.inactive {
 
 h2.active {
     color: #0d0d0d;
-    border-bottom: 2px solid #5fbae9;
+    border-bottom: 2px solid rgba(156, 202, 235, 1);
 }
 
 
 /* FORM TYPOGRAPHY*/
 
 input[type=button],
-input[type=submit],
 input[type=reset] {
     background-color: #56baed;
     border: none;
@@ -95,13 +102,11 @@ input[type=reset] {
 }
 
 input[type=button]:hover,
-input[type=submit]:hover,
 input[type=reset]:hover {
     background-color: #39ace7;
 }
 
 input[type=button]:active,
-input[type=submit]:active,
 input[type=reset]:active {
     -moz-transform: scale(0.95);
     -webkit-transform: scale(0.95);
@@ -133,7 +138,7 @@ input[type=text] {
 
 input[type=text]:focus {
     background-color: #fff;
-    border-bottom: 2px solid #5fbae9;
+    border-bottom: 2px solid rgba(156, 202, 235, 1);
 }
 
 input[type=text]:placeholder {
